@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+html { 
+    background: url(../img/OmSplash.JPG) no-repeat center center fixed; 
+    background-size: cover;
+    background-position: right 20px bottom 20px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body { 
+ color:white;
+   font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    /* border: 1px solid yellow; */
+    padding: 0;
+    color:white
+}
+
+.nav img {
+    justify-content: right;
+}
+
+.nav .container{
+    display: flex;
+    /* border: 1px solid white; */
+
+}
+
+.nav ul {
+   display: flex;
+   list-style: none;
+   flex: 1;
+
+  }
+
+.nav ul li {
+    display:flex;
+    font-size: 1.5em;
+    align-items: flex-end; 
+    justify-content: right;
+    color:white;
+    flex: 1;
+    /* display: block;
+    font-size: 1em;
+    list-style: none;
+    width: 180px; */
+}
+
+.nav .icons {
+    justify-content: center;
+}
+
+
+
+
+@media all and (max-width:1000px) {
+    .nav ul {
+        flex-wrap:wrap;
+    }
+
+    .nav li {
+        flex: 1 1 50%;
+        color:red;
+    }
+
+}
+
+@media all and (max-width:320px) {
+    .nav ul {
+        flex-wrap:wrap;
+    }
+
+    .nav li {
+        flex: 1 1 50%;
+        color:white
+    }
+
+}
