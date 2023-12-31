@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
+
+<!--; head-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +11,13 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+<!--; body -->
 <!-- <div class="top-header">
     <h2><i class="fas fa-om"></i>  बाबा कोटेश्वरनाथ</h2>
     <p>Koteshwarnath Dham</p>
 </div>  -->
-
+<!--;; navbar -->
 <div class="wrapper">
-
     <nav class="navbar">
         <button aria-expanded="false" aria-controls="nav-menu-list">
             <span class="open"><i class="fa fa-bars"></i></span>
@@ -40,7 +41,7 @@
         </header>
     </div> 
 </div>
-
+<!--;; main -->
     <div class="showcase-text">
         <h3>  ॐ नमः शिवाय </h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -147,32 +148,8 @@
 
     </footer> 
 
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
 
-   const navButton = document.querySelector('button[aria-expanded]');
-   function toggleNav({ target }) {
-       const expanded = target.getAttribute('aria-expanded') === 'true' || false ;
-       console.log(expanded);
-       navButton.setAttribute('aria-expanded',!expanded)
-   }
-
-   navButton.addEventListener('click',toggleNav);
-
-    </script>
+<script src="script.js"></script>
 </body>
 
 
