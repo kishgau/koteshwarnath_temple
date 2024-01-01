@@ -94,7 +94,6 @@ button {
    align-items: end;
    justify-content: flex-end;
    flex-flow: column-wrap;
-   margin-top: 10%;  
    margin-right: 5%; 
 }   
 
@@ -144,6 +143,7 @@ button {
     /* padding: 5px; */
     color:black;
 	border: 2px solid wheat;
+	border-radius: 15px;
 	background-color: black;
     line-height: 1.6;
     position: absolute;
@@ -164,21 +164,21 @@ button {
    list-style-type: none;
   }
 
-  .navbar li a {
-      display: block;
-	  padding-top: 15px;
-	  padding-bottom: 15px;
-      text-decoration: none;
-	  margin-right: 25px;
-      color: white;
-      font-size: 20px;
-      text-align: center;
-  }
+ .navbar li a {
+     display: block;
+	 padding: 15px 10px 15px 10px;
+     text-decoration: none;
+	 margin-right: 25px;
+     color: white;
+     font-size: 20px;
+     text-align: center;
+ }
 
   .navbar li a:hover {
       text-decoration: none;
 	  background-color: wheat;
 	  color: black;
+	  border-radius: 10px;
   }
 
 /*
