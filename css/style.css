@@ -77,14 +77,16 @@ button {
 }
 
 .wrapper {
-    color: white;
-    min-height: 600px;
-    background: white url(../img/homepage/OmSplash.JPG);
+    /* color: white; */
+    /* min-height: 600px; */
+	/* background-color: gold; */
+    background-image: url(../img/OmSplash.JPG);
     background-size: cover;
     background-position: bottom left;
     width: 100vw;
     height: 100vh;
 }
+
 
 .splash {
    display: flex; 
@@ -101,17 +103,12 @@ button {
  }  
 
 
-
-
-
 /*  SHowcase  */
 .showcase {
     display: grid;
     grid-gap: 20px;
     padding: 20px;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-   
- 
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); 
 }
 
 .showcase-card {
@@ -140,21 +137,18 @@ button {
     
 }
 
-.wrapper {
-    display: grid;
-    grid-gap: 20px;
-    
-
-}
 
 /* Navbar */
 .navbar {
     /* border: 1px solid yellow; */
-    padding: 0;
+    /* padding: 5px; */
     color:black;
+	border: 2px solid wheat;
+	background-color: black;
     line-height: 1.6;
     position: absolute;
     margin-top: 20px;
+	padding-left: 15px;
     margin-left: 30px;
 }
 
@@ -168,21 +162,24 @@ button {
    justify-content: space-between;
    align-items: center ;
    list-style-type: none;
- 
   }
 
   .navbar li a {
       display: block;
-      padding: 15px 15px;
+	  padding-top: 15px;
+	  padding-bottom: 15px;
       text-decoration: none;
+	  margin-right: 25px;
       color: white;
       font-size: 20px;
       text-align: center;
   }
 
-  .navbar li a:active {
-    text-decoration: underline;
-}
+  .navbar li a:hover {
+      text-decoration: none;
+	  background-color: wheat;
+	  color: black;
+  }
 
 /*
 .navbar a {
@@ -350,14 +347,14 @@ button {
         margin-left: 5px;
         transition: margin-left 200ms ease-in-out;
     }
-    .wrapper {
-        color: white;
-        min-height: 600px;
-        background: white url(../img/OmSplash.JPG);
-        background-size: cover;
-        background-position: bottom left;
-        background-position: left -240px top 0;
-        transition: background-position 200ms ease-in-out;
+    /* .wrapper { */
+    /*     color: white; */
+    /*     min-height: 600px; */
+    /*     background: white url(../img/OmSplash.JPG); */
+    /*     background-size: cover; */
+    /*     background-position: bottom left; */
+    /*     background-position: left -240px top 0; */
+    /*     transition: background-position 200ms ease-in-out; */
         
     }
     
